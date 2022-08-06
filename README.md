@@ -18,6 +18,8 @@
 
 ## [Back-End Repo](https://github.com/hanthienduc/ts-react-my-library-back)
 
+## [Original created Repo](https://github.com/hanthienduc/ts-react-my-library)
+
 ## Setup & Installation
 - npm clone the project
 - in command line navigate to project directory and run `npm install`
