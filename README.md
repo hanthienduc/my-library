@@ -14,6 +14,10 @@
 ![view-author](/src/assets/screenshots/view-author.png)
 ![view-book](/src/assets/screenshots/view-book.png)
 ![Home](/src/assets/screenshots/home.png)
+
+
+## [Back-End Repo](https://github.com/hanthienduc/ts-react-my-library-back)
+
 ## Setup & Installation
 - npm clone the project
 - in command line navigate to project directory and run `npm install`
