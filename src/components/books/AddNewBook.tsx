@@ -1,16 +1,13 @@
-import { useAddEditBook } from "../../hooks/useAddEditBook";
+import { useContext, useEffect } from "react";
+import { BookContext } from "../../context/BookContext";
 import { FormInputs } from "./FormInputs";
 export function AddNewBook() {
 
-    const { handleAddBook,
-        handleInputChange,
-        book,
-        handleSelect,
-        authors,
-        uploadImage,
-        image,
-        loading,
-        handleAreaChange } = useAddEditBook()
+    const {resetForm } = useContext(BookContext)
+
+    useEffect(() => {
+        resetForm()
+    }, [])
 
     return (
         <FormInputs formTitle="Add Book" submitBtnTitle="Create" isAddBook={true} />

@@ -1,7 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { BookContext } from "../../context/BookContext";
-import { useAddEditBook } from "../../hooks/useAddEditBook";
 import { api_base } from "../../utilities/apiUrl";
 import { FormInputs } from "./FormInputs";
 
@@ -9,7 +8,7 @@ export function EditBook() {
 
     const { id } = useParams()
 
-    const { book, setBook } = useAddEditBook()
+    const { book, setBook } = useContext(BookContext)
 
     useEffect(() => {
         getBook()

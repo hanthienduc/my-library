@@ -1,5 +1,5 @@
-import { useEffect } from "react"
-import { useAddEditBook } from "../../hooks/useAddEditBook"
+import { useContext, useEffect } from "react"
+import { BookContext } from "../../context/BookContext"
 import { Book } from "../../interfaces/Book"
 
 type FormInputsProps = {
@@ -20,12 +20,12 @@ export function FormInputs({ formTitle, submitBtnTitle, isAddBook, bookData }: F
         uploadImage,
         image,
         loading,
-        handleAreaChange } = useAddEditBook()
+        handleAreaChange, handleUpdateBook } = useContext(BookContext)
 
     return (
         <div>
             <h2 className="page-header">{formTitle}</h2>
-            <form onSubmit={(e) => handleAddBook(e, isAddBook)}>
+            <form onSubmit={(e) => isAddBook ? handleAddBook(e) : handleUpdateBook(e, book._id)}>
                 <div className="form-row">
                     <div className="form-item">
                         <label>Title</label>
