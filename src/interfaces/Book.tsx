@@ -1,4 +1,4 @@
-import { Author } from "../context/AuthorContext"
+import { Author } from "./Author"
 
 export interface Book {
     _id: string,

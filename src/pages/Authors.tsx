@@ -1,6 +1,6 @@
 import { ChangeEventHandler, SyntheticEvent, useContext, useEffect, useState } from "react"
 import { AuthorItem } from "../components/authors/AuthorItem"
-import { Author, AuthorContext } from "../context/AuthorContext"
+import { AuthorContext } from "../context/AuthorContext"
 
 export function Authors() {
 
